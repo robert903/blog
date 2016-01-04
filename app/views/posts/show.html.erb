@@ -1,0 +1,12 @@
+<!-- So this is how you show the current post that has been created. @post.title ( shows its title) -->
+<h1 class="title">
+  <%= @post.title %>
+</h1>
+<!--Right here we ar listing the date the post was created at in words -->
+<p class="date">
+  Submitted <%= time_ago_in_words(@post.created_at) %> Ago
+</p>
+
+<p class="body">
+  <%= @post.body%>
+</p>
